@@ -4,7 +4,7 @@
 
     include _ROOT_PATH.'/app/security/check.php';
 
-    function odebranieParam(&$kwota,&$lata,&$procent){
+    function getParams(&$kwota,&$lata,&$procent){
         $kwota = isset($_REQUEST['kwota']) ? $_REQUEST['kwota'] : null;
         $lata = isset($_REQUEST['lata']) ? $_REQUEST['lata'] : null;
         $procent = isset($_REQUEST['procent']) ? $_REQUEST['procent'] : null;
